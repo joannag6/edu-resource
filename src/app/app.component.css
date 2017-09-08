@@ -1,4 +1,22 @@
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 200%;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.example-card {
+  height: auto;
+  margin: 20px;
+  width: auto;
+  width: -webkit-fill-available;
+}
+
+collapsible-header {
+  background-color: #5C6BC0;
+  color: #fff;
+  font-weight: bold;
+}
+
+collapsible-body {
+  background-color: #E8EAF6;
 }

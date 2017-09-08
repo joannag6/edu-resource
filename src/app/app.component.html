@@ -1,16 +1,126 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{title}}
-  </h1>
-</div>
-<div style="text-align:center; margin:40px">
-  <button md-raised-button color="primary">Parents</button>
-</div>
+<md-grid-list cols="1" rowHeight="100px">
+  <md-grid-tile>
+    <md-card>
+      <md-card-header>
+        <md-card-title style="font-size: 1.5em; font-weight: bold; margin: 0 auto">{{title}}</md-card-title>
+      </md-card-header>
+    </md-card>
+  </md-grid-tile>
+</md-grid-list>
 
-<div style="text-align:center; margin:40px">
-  <button md-raised-button color="primary">Students</button>
-</div>
+
+<md-grid-list cols="2" gutterSize="20px">
+  <md-grid-tile>
+    <md-card class="example-card">
+      <md-card-header>
+        <div md-card-avatar class="example-header-image"></div>
+        <md-card-title>Mainstream Schools</md-card-title>
+        <md-card-subtitle>Definition + details</md-card-subtitle>
+      </md-card-header>
+
+      <md-card-content>
+        <collapsible-list [type]="'expandable'">
+
+          <collapsible-list-item>
+            <collapsible-header class="waves-effect">
+              Advantages
+            </collapsible-header>
+            <collapsible-body [expanded]="false">
+              <p>Item #1 Body</p>
+            </collapsible-body>
+          </collapsible-list-item>
+
+          <collapsible-list-item>
+            <collapsible-header class="waves-effect">
+              Disadvantages
+            </collapsible-header>
+            <collapsible-body [expanded]="false">
+              <p>Item #2 Body</p>
+            </collapsible-body>
+          </collapsible-list-item>
+
+          <collapsible-list-item>
+            <collapsible-header class="waves-effect">
+              Extras
+            </collapsible-header>
+            <collapsible-body [expanded]="false">
+              <p>Item #3 Body</p>
+            </collapsible-body>
+          </collapsible-list-item>
+
+        </collapsible-list>
+      </md-card-content>
+    </md-card>
+  </md-grid-tile>
+
+  <md-grid-tile>
+    <md-card class="example-card">
+      <md-card-header>
+        <div md-card-avatar class="example-header-image"></div>
+        <md-card-title>Specialised Schools</md-card-title>
+        <md-card-subtitle>Definition + details</md-card-subtitle>
+      </md-card-header>
+
+      <md-card-content>
+        <collapsible-list [type]="'expandable'">
+
+          <collapsible-list-item>
+            <collapsible-header class="waves-effect">
+              Advantages
+            </collapsible-header>
+            <collapsible-body [expanded]="false">
+              <p>Item #1 Body</p>
+            </collapsible-body>
+          </collapsible-list-item>
+
+          <collapsible-list-item>
+            <collapsible-header class="waves-effect">
+              Disadvantages
+            </collapsible-header>
+            <collapsible-body [expanded]="false">
+              <p>Item #2 Body</p>
+            </collapsible-body>
+          </collapsible-list-item>
+
+          <collapsible-list-item>
+            <collapsible-header class="waves-effect">
+              Extras
+            </collapsible-header>
+            <collapsible-body [expanded]="false">
+              <p>Item #3 Body</p>
+            </collapsible-body>
+          </collapsible-list-item>
+
+        </collapsible-list>
+      </md-card-content>
+    </md-card>
+  </md-grid-tile>
+
+<!-- <button md-raised-button color="primary">Parents</button> -->
+
+  <!-- <md-grid-tile>
+    <md-card class="example-card">
+      <md-card-header>
+        <div md-card-avatar class="example-header-image"></div>
+        <md-card-title>Shiba Inu</md-card-title>
+        <md-card-subtitle>Dog Breed</md-card-subtitle>
+      </md-card-header>
+      <img md-card-image src="../assets/download.jpeg" alt="Photo of a Shiba Inu">
+      <md-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+      </md-card-content>
+      <md-card-actions>
+        <button md-button>LIKE</button>
+        <button md-button>SHARE</button>
+      </md-card-actions>
+    </md-card>
+  </md-grid-tile> -->
+</md-grid-list>
 <!-- <ul>
   <li>
     <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>

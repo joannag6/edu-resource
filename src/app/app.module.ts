@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { DependentModules } from './app.dependent-modules'
 import { AppComponent } from './app.component';
 
+import '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent
