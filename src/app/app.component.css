@@ -11,12 +11,29 @@ h1 {
   width: -webkit-fill-available;
 }
 
-collapsible-header {
-  background-color: #5C6BC0;
+.school-type-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+md-card {
+  background-color: #00838F;/*#7986CB;*/
   color: #fff;
+}
+
+collapsible-header {
+  background-color: #B0BEC5; /*#C5CAE9;*/
+  color: #000;
   font-weight: bold;
 }
 
 collapsible-body {
-  background-color: #E8EAF6;
+  background-color: #ECEFF1; /*#E8EAF6;*/
+  color: #000;
+  font-weight: normal;
+}
+
+.title-card {
+  background-color: #F5F5F5;
+  color: #000;
 }
