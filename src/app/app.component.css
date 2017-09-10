@@ -16,9 +16,21 @@ h1 {
   font-weight: bold;
 }
 
+ul {
+  margin: 0px;
+}
+
+li {
+  margin: 7px 0px;
+}
+
 md-card {
   background-color: #00838F;/*#7986CB;*/
   color: #fff;
+}
+
+md-card-subtitle {
+  color: #F5F5F5;
 }
 
 collapsible-header {
@@ -31,6 +43,7 @@ collapsible-body {
   background-color: #ECEFF1; /*#E8EAF6;*/
   color: #000;
   font-weight: normal;
+  padding: 1rem;
 }
 
 .title-card {
