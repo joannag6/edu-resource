@@ -25,18 +25,22 @@ li {
 }
 
 md-card {
-  background-color: #00838F;/*#7986CB;*/
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);/*#00838F;#7986CB;*/
 }
 
 md-card-subtitle {
-  color: #F5F5F5;
+  color: #000;/*#F5F5F5;*/
+}
+
+md-card-content {
+  margin: 0px 8px;
 }
 
 collapsible-header {
-  background-color: #B0BEC5; /*#C5CAE9;*/
-  color: #000;
+  background-color: rgba(1,87,155,0.8); /*#B0BEC5; */
+  color: #fff;
   font-weight: bold;
+  text-shadow: #777 0.5px 1px;
 }
 
 collapsible-body {
@@ -47,6 +51,20 @@ collapsible-body {
 }
 
 .title-card {
-  background-color: #F5F5F5;
+  background-color: rgba(255, 255, 255, 0.8);/*#F5F5F5;*/
   color: #000;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.header-footer {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mat-card-header-text {
+  margin: 0 auto;
 }

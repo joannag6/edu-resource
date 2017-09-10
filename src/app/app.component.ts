@@ -7,5 +7,5 @@ import '@angular/material';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  title = 'Resource to help deaf or hard-of-hearing (DHH) students and their parents decide on a primary school.';
+  title = 'Resource To Help Deaf Or Hard-Of-Hearing (DHH) Students And Their Parents Decide On A Primary School.';
 }
