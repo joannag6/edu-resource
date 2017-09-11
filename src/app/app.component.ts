@@ -9,7 +9,7 @@ import { PasswordComponent } from './password.component';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  correctPassword =true;// false;
+  correctPassword = false;
   actualPassword = "educ20069";
   password = '';
 
