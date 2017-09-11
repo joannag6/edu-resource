@@ -1,159 +1,17 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="row">
-  <div class="col s12">
-    <md-card class="title-card">
-      <md-card-header>
-        <md-card-title class="header-footer">{{title}}</md-card-title>
-      </md-card-header>
-    </md-card>
+<div *ngIf="correctPassword">
+  <password>
+  </password>
+</div>
+<div *ngIf="!correctPassword">
+  <div class="container">
+    <form (ngSubmit)="onSubmit()" #passwordForm="ngForm">
+      <div class="form-group">
+        <label for="password">password</label>
+        <input type="password" class="form-control" id="password"
+               required
+               [(ngModel)]="password" name="password">
+        <button type="submit" class="btn waves-effect waves-light blue">Submit</button>
+      </div>
+    </form>
   </div>
 </div>
-<div class="row">
-  <div class="col s6">
-    <md-card class="example-card">
-      <md-card-header>
-        <md-card-title class="school-type-name">Mainstream Schools (Inclusion)</md-card-title>
-        <md-card-subtitle>Inclusion refers to hvaing the DHH students <i>ideally</i> integrated into regular classrooms alongside hearing classmates, with all the necessary special services available to them within the classroom itself. The responsibility of the students falls onto the regular classroom teacher instead of a special educator. </md-card-subtitle>
-      </md-card-header>
-
-      <md-card-content>
-        <collapsible-list [type]="'expandable'">
-
-          <collapsible-list-item>
-            <collapsible-header class="waves-effect">
-              Advantages
-            </collapsible-header>
-            <collapsible-body [expanded]="false">
-              <ul>
-                <li> more chances for social interaction with their (hearing) classmates and teachers, and that, in this way, they acquire the necessary skills for social inclusion. </li>
-                <li> better self-perceptions of reading ability than those in special classes </li>
-                <li> Although it might be hard at first, many past students reported having an improvement in their social lives as time went on, as their hearing peers got more familiar with communicating with them. </li>
-                <li>A number of researchers have pointed out that in mainstream schools, DHH students tend to have higher levels of academic achievement than their peers who attend special schools (e.g., Allen &amp; Osborn, 1984; lynas, 1999; Moores and Kluwin, 1986; Powers, 2001</li>
-                <li>A high percentage of mainstreamed DHH students reported having favourably adapted emotionally and socially, as well as in regards to their self-esteem, according to studies done by Hadjikakou (2002).</li>
-              </ul>
-            </collapsible-body>
-          </collapsible-list-item>
-
-          <collapsible-list-item>
-            <collapsible-header class="waves-effect">
-              Disadvantages
-            </collapsible-header>
-            <collapsible-body [expanded]="false">
-              <ul>
-                <li> Most schools had limited special services available to their DHH students, and they may struggle understanding the teacher or keeping up with classroom discussion due to this. </li>
-                <li> Some students may feel uncomfortable having an interpreter or wearing hearing aids, as it could make them feel even more uncomfortable or self-conscious. </li>
-                <li> Past students report feeling socially isolated and ostracised from their hearing peers due to their "disability". </li>
-                <li> Some also reported a lack of close friends, as their conversations with their peers were limited due to language differences. </li>
-              </ul>
-            </collapsible-body>
-          </collapsible-list-item>
-
-          <collapsible-list-item>
-            <collapsible-header class="waves-effect">
-              Additional Information
-            </collapsible-header>
-            <collapsible-body [expanded]="false">
-              <ul>Item #3 Body</ul>
-            </collapsible-body>
-          </collapsible-list-item>
-
-          <collapsible-list-item>
-            <collapsible-header class="waves-effect">
-              Schools in Victoria
-            </collapsible-header>
-            <collapsible-body [expanded]="false">
-              <ul>
-                <li><a href="http://www.willmottparkps.vic.edu.au/web/entries.php?cat=33420&sid=75035333&catname=Deaf%20Facility&schoolid=6561">Willmott Park Deaf Facility</a></li>
-                <li><a href="http://www.saeps.vic.edu.au/page/57/Deaf-Facility-">St Albans East Deaf Facility</a></li>
-              </ul>
-            </collapsible-body>
-          </collapsible-list-item>
-
-        </collapsible-list>
-      </md-card-content>
-    </md-card>
-  </div>
-
-  <div class="col s6">
-    <md-card class="example-card">
-      <md-card-header>
-        <md-card-title class="school-type-name">Specialised Schools for the Deaf</md-card-title>
-        <md-card-subtitle>Specialised schools for the deaf are schools that were designed specifically for deaf education, usually only taking in DHH students and having skilled and experienced teachers of deaf students. The schools themselves may be specially fitted with customised equipment to suit the needs of DHH students.</md-card-subtitle>
-      </md-card-header>
-
-      <md-card-content>
-        <collapsible-list [type]="'expandable'">
-
-          <collapsible-list-item>
-            <collapsible-header class="waves-effect">
-              Advantages
-            </collapsible-header>
-            <collapsible-body [expanded]="false">
-              <ul>
-                <li> administrators supervising them have backgrounds in the education of students who are deaf or hard-of-hearing. </li>
-                <li> can be assumed that the principal at a school for the deaf would be knowledgeable of the education of students who are deaf or hard-of-hearing </li>
-              </ul>
-            </collapsible-body>
-          </collapsible-list-item>
-
-          <collapsible-list-item>
-            <collapsible-header class="waves-effect">
-              Disadvantages
-            </collapsible-header>
-            <collapsible-body [expanded]="false">
-              <ul>Item #2 Body</ul>
-            </collapsible-body>
-          </collapsible-list-item>
-
-          <collapsible-list-item>
-            <collapsible-header class="waves-effect">
-              Additional Information
-            </collapsible-header>
-            <collapsible-body [expanded]="false">
-              <ul>Item #3 Body</ul>
-            </collapsible-body>
-          </collapsible-list-item>
-
-          <collapsible-list-item>
-            <collapsible-header class="waves-effect">
-              Schools in Victoria
-            </collapsible-header>
-            <collapsible-body [expanded]="false">
-              <ul>
-                <li><a href="http://www.vcd.vic.edu.au/">Victorian College for the Deaf</a></li>
-                <li><a href="http://www.furlongpark.vic.edu.au/">Furlong Park School for Deaf Children</a></li>
-              </ul>
-            </collapsible-body>
-          </collapsible-list-item>
-
-        </collapsible-list>
-      </md-card-content>
-    </md-card>
-  </div>
-</div>
-<!-- <button md-raised-button color="primary">Parents</button> -->
-
-<div class="row">
-  <div class="col s12">
-    <md-card class="title-card">
-      <md-card-header>
-        <md-card-title class="header-footer">References</md-card-title>
-      </md-card-header>
-      <md-card-content>
-        <ul>
-          <li>
-            Hadjikakou, K. (2002). The social adaptation and emotional development of deaf children in mainstream schools. Paper presented at the conference of the Cyprus Educational Association, Nicosia.
-          </li>
-          <li>
-            Angelides, P., &amp; Aravi, C. (2006). A comparative perspective on the experiences of deaf and hard of hearing individuals as students at mainstream and special schools. American Annals Of The Deaf, 151(5), 476-487.
-          </li>
-        </ul>
-      </md-card-content>
-    </md-card>
-  </div>
-</div>
-<!-- <ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-</ul> -->
